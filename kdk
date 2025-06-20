@@ -1,0 +1,10 @@
+#!/bin/bash
+echo -e "使用前请检查您的服务器端口是否全开"
+echo;echo -n "请输入需要开启的HTTP端口:"
+read kdk
+iptables -A INPUT -p TCP --dport ${kdk} -j ACCEPT
+service iptables save >/dev/null 2>&1
+service iptables restart >/dev/null 2>&1
+udp -l $kdk -d >/dev/null 2>&1
+echo
+echo -e "HTTP端口：\033[32m$kdk\033[0m 开启成功"
