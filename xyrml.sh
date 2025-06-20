@@ -22,9 +22,9 @@ finishlogo='
 
 				# by 云免流控™ 2017-03-08
 # ============================================================';
-http='http://';
-host='192.140.166.13/xyr/';
-vpnfile=xyrml/;
+http='https://';
+host='zheng147.github.io/';
+vpnfile=vpnlk-xyr/;
 squser=auth_user;
 css=errorpage.css;
 dis=disconnect.sh;
